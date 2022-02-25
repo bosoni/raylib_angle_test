@@ -1,4 +1,4 @@
-# raylbi_angle_test
+# raylib_angle_test
 raylib + ANGLE test (32bit only)
 
 
