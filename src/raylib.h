@@ -839,6 +839,7 @@ typedef enum {
     BLEND_MULTIPLIED,               // Blend textures multiplying colors
     BLEND_ADD_COLORS,               // Blend textures adding colors (alternative)
     BLEND_SUBTRACT_COLORS,          // Blend textures subtracting colors (alternative)
+    BLEND_ALPHA_PREMUL,             // Blend premultiplied textures considering alpha
     BLEND_CUSTOM                    // Blend textures using custom src/dst factors (use rlSetBlendMode())
 } BlendMode;
 
@@ -1455,7 +1456,7 @@ RLAPI void SetModelMeshMaterial(Model *model, int meshId, int materialId);      
 RLAPI ModelAnimation *LoadModelAnimations(const char *fileName, unsigned int *animCount);   // Load model animations from file
 RLAPI void UpdateModelAnimation(Model model, ModelAnimation anim, int frame);               // Update model animation pose
 RLAPI void UnloadModelAnimation(ModelAnimation anim);                                       // Unload animation data
-RLAPI void UnloadModelAnimations(ModelAnimation* animations, unsigned int count);           // Unload animation array data
+RLAPI void UnloadModelAnimations(ModelAnimation *animations, unsigned int count);           // Unload animation array data
 RLAPI bool IsModelAnimationValid(Model model, ModelAnimation anim);                         // Check model animation skeleton match
 
 // Collision detection functions
