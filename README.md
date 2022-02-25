@@ -1,6 +1,8 @@
 # raylib_angle_test
 raylib + ANGLE test (32bit only)
 
+raylib: https://github.com/raysan5/raylib
+
 
 open ./VS2019.ANGLE/raylib.sln and run. It uses ./lib/libGLESv2.dll and ./lib/libEGL.dll, and starts with Direct3D 11.
 
