@@ -4,7 +4,7 @@ raylib + ANGLE test (32bit only)
 raylib: https://github.com/raysan5/raylib
 
 
-open ./VS2019.ANGLE/raylib.sln and run. 
+open ./projects/VS2019.ANGLE/raylib.sln and run. 
 
 It uses ./projects/VS2019.ANGLE/lib/x86/libGLESv2.lib  and ./projects/VS2019.ANGLE/lib/x86//libEGL.lib, 
 and starts with Direct3D11 (using libGLESv2.dll, libEGL.dll and d3dcompiler_47.dll, 
